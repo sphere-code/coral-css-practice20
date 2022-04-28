@@ -1,2 +1,27 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
+.sectionWidget {
+    border: solid gray;
+    width: auto;
+}
 
+.headerWidget {
+    border: solid black;
+    background-color: gray;
+}
+
+.chatbox {
+    background-color: gray;
+}
+
+.circle {
+    background: hsl(240, 100%, 71%);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    color: white;
+    text-align: center;
+}
