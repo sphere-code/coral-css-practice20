@@ -1,27 +1,210 @@
 * {
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 14px;
+    margin: 0px;
+}
+
+body {
+    background-color: gray;
+}
+
+a {
+    color: #0B74DB;
+}
+
+.widgetAgentScript {
+    background: #FFFFFF;
+    border: 1px solid #EFEFF0;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    width: 420px;
 }
 
 .sectionWidget {
-    border: solid gray;
-    width: auto;
+    background: #EFEFF0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 16px;
+}
+
+.authenticateLabel {
+    display: flex;
+    align-items: center;
+    margin-right: 49px;
+}
+
+#headerLabel {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 158px;
+}
+
+#minimizeIcon {
+    height: 16px;
+    width: 16px;
 }
 
 .headerWidget {
-    border: solid black;
-    background-color: gray;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 8px 10px;
+    width: 420px;
+    height: 32px;
+    /* Inside auto layout */
+    margin: 0px 0px;
 }
 
-.chatbox {
-    background-color: gray;
+.headerWidgetLabel {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+}
+
+#userName {
+    margin-left: 3px;
+}
+
+
+/* Icons */
+
+#minimizeIcon {
+    height: 16px;
+    width: 16px;
+}
+
+#lockIcon {
+    height: 28px;
+    width: 28px;
+    margin-right: 7px;
+}
+
+#tickIcon {
+    height: 20px;
+    width: 20px;
+}
+
+#callReasonIcon {
+    height: 28px;
+    width: 28px;
+    margin-right: 7px;
 }
 
 .circle {
-    background: hsl(240, 100%, 71%);
+    background: hsl(214, 41%, 49%);
     border-radius: 50%;
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     color: white;
     text-align: center;
+    padding: 6px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.instructionOne {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    position: relative;
+}
+
+.instructionTwo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1px;
+    position: relative;
+    right: 28px;
+}
+
+.chatBoxWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.chatbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    border: 1px dashed #EFEFF0;
+    width: 309px;
+    height: 52px;
+    gap: 4px;
+}
+
+.customerVerify {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    padding: 14px;
+    right: 62px;
+    gap: 4px;
+}
+
+.sectionWidget2 {
+    background: #EFEFF0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 16px;
+}
+
+.callReasonLabel {
+    display: flex;
+    align-items: center;
+    margin-right: 49px;
+}
+
+.callReasonOptions {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 8px;
+    gap: 16px;
+}
+
+.buttonWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 10px;
+    width: 350px;
+}
+
+button {
+    background-color: white;
+    border: 1px solid gray;
+    color: var(--clr-input);
+    border-radius: 6px;
+    border: 1px solid #DADADA;
+    padding: 10px 20px;
+}
+
+:root {
+    --clr-input: #3A80DC;
 }

@@ -11,71 +11,112 @@
 <div class="widgetAgentScript">
 
     <div class="headerWidget">
-        <p>Agent Script</p>
+        <p id="headerLabel">Agent Script</p>
+        <img id="minimizeIcon" src="/assets/minimize-icon.svg" alt="minimizeIcon">
 
     </div>
     <div class="sectionWidget">
+        <div class="authenticateLabel">
 
-        <div class="lockIcon">
+
+            <img id="lockIcon" src="/assets/scriptAuthenticated.svg" alt="lockIcon">
+
+            <p>Authenticated: Welcome</p> <a id="userName" href="userName">User Name</a>
+
         </div>
-        <p>Authenticated: Welcome</p> <a href="userName">User Name</a>
+
+        <img id="tickIcon" src="/assets/scriptTick.svg" alt="tickIcon">
+
+    </div>
+
+    <div class="instructionOne">
 
         <p class="circle">1</p>
-        <div class="circle">
-
-
-        </div>
-
         <p>Greeting to customer</p>
-        <div class="chatBox">
+    </div>
 
+    <div class="chatBoxWrapper">
+
+        <div class="chatbox">
             <p>Hi are you speaking with [<a href="userName">UserName</a>]</p>
             <p>Would I be speaking with [<a href="userName2">UserName2</a>]?</p>
 
         </div>
-        <div class="chatBox">
 
 
-        </div>
-        <p>2</p>
+
+    </div>
+
+    <div class="instructionTwo">
+        <p class="circle">2</p>
         <p>Customer is [<a href="realCustomer">RealCustomer</a>]:</p>
-        <form action="customerVerify">
 
-            <input type="checkbox" name="Yes" id="">
-            <label for="">Yes</label>
-            <input type="checkbox" name="No" id="">
-            <label for="">No</label>
-        </form>
+
+    </div>
+
+    <form class="customerVerify" action="customerVerify">
+
+        <label for="">Yes</label>
+        <input type="checkbox" name="Yes" id="">
+        <label for="">No</label>
+        <input type="checkbox" name="No" id="">
+
+    </form>
+
+
+    <div class="buttonWrapper">
+
         <button>Next</button>
+    </div>
 
-        <div class="sectionWidget">
+    <div class="sectionWidget2">
 
-            <div class="callReason">
-                <div class="callReasonIcon"></div>
-                <p>Call Reason</p>
-            </div>
-
-            <div class="chatbox">
-                <p>How can I help you today?</p>
-            </div>
+        <div class="callReasonLabel">
+            <img id="callReasonIcon" src="/assets/scriptCallReason.svg" alt="callReasonIcon">
             <p>Call Reason</p>
-            <form action="#action">
+        </div>
 
-                <select name="callReason">
+
+    </div>
+
+    <div class="chatBoxWrapper">
+
+        <div class="chatbox">
+            <p>How can I help you today?</p>
+        </div>
+
+    </div>
+
+    <div class="callReasonOptions">
+        <p>Call Reason</p>
+        <form action="#action">
+
+            <select name="callReason">
                     <option value="Other">Other</option>
                     <option value="Billing">Billing</option>
                     <option value="Customer_Service">Customer Service</option>
                 </select>
-            </form>
-            <p>Other</p>
-            <input type="text">
-        </div>
-        <button>Next</button>
+        </form>
+        <p>Other</p>
+        <input type="text">
+
+
     </div>
 
+    <div class="buttonWrapper">
+
+        <button>Next</button>
+
+    </div>
+
+</div>
+
+
+</div>
 
 
 
-    </body>
+
+</body>
 
 </html>
