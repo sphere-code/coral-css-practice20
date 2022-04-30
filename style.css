@@ -25,7 +25,7 @@ a {
     justify-content: center;
     align-items: center;
     padding: 0px;
-    width: 420px;
+    width: 350px;
 }
 
 .sectionWidget {
@@ -34,6 +34,7 @@ a {
     flex-direction: row;
     align-items: center;
     padding: 8px 16px;
+    width: 100%;
 }
 
 .authenticateLabel {
@@ -47,7 +48,7 @@ a {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin: 0px 158px;
+    margin: 0px 119px;
 }
 
 #minimizeIcon {
@@ -61,7 +62,7 @@ a {
     justify-content: flex-end;
     align-items: center;
     padding: 8px 10px;
-    width: 420px;
+    width: 340px;
     height: 32px;
     /* Inside auto layout */
     margin: 0px 0px;
@@ -115,23 +116,15 @@ a {
     margin-right: 10px;
 }
 
-.instructionOne {
+.instructionOne,
+.instructionTwo {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
     padding: 20px;
     position: relative;
-}
-
-.instructionTwo {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 1px;
-    position: relative;
-    right: 28px;
+    width: 100%;
 }
 
 .chatBoxWrapper {
@@ -140,6 +133,7 @@ a {
     justify-content: center;
     align-items: center;
     padding: 10px;
+    width: 100%;
 }
 
 .chatbox {
@@ -159,9 +153,9 @@ a {
     flex-direction: row;
     align-items: center;
     position: relative;
-    padding: 14px;
-    right: 62px;
+    left: 39px;
     gap: 4px;
+    width: 100%;
 }
 
 .sectionWidget2 {
@@ -170,6 +164,7 @@ a {
     flex-direction: row;
     align-items: center;
     padding: 8px 16px;
+    width: 100%;
 }
 
 .callReasonLabel {
@@ -205,6 +200,26 @@ button {
     padding: 10px 20px;
 }
 
+select {
+    border-radius: 6px;
+    border: 1px solid #DBDBDB;
+    width: 84px;
+    height: 24px;
+}
+
+#checkBox {
+    border-radius: 50%;
+    border: gray;
+}
+
+#otherInput {
+    height: 24px;
+    width: 84px;
+    border-radius: 6px;
+    border: 1px solid var(--clr-border)
+}
+
 :root {
     --clr-input: #3A80DC;
+    --clr-border: #DBDBDB;
 }
