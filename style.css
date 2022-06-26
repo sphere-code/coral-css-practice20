@@ -17,7 +17,6 @@ a {
 #widgetAgentScript {
     background: #FFFFFF;
     border: 1px solid #EFEFF0;
-    box-sizing: border-box;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
     border-radius: 6px;
     display: flex;
@@ -50,6 +49,7 @@ a {
     justify-content: center;
     align-items: center;
     margin: 0px 119px;
+    font-weight: 600;
 }
 
 #minimizeIcon {
